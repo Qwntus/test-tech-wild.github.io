@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact The Kingdom</title>
+        <link rel="stylesheet" href="css/contact.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+        <header class="header">
+            <img src="images/Logo_Colchis.png" alt="logo">
+        </header>
+
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="royal-family.html">ROYAL FAMILY</a></li>
+            <li><a href="royal-assets.html">ROYAL ASSETS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+    
+        </ul>
+        </nav>
+    </div>
+    
+    <div id="menuBtn">
+        <img src="images/menu.png" alt="menu_icon" id="menu">
+    </div>
+
+    <section id="contact">
+        
+        <div class="contact-text">
+            <h1>Contact Us</h1>
+                <form id="contactForm">
+                    <div class="input-container">
+                        <label for="name">First name:</label>
+                        <input type="text" class="input" name="name" value="John">
+                    </div>
+                    <div class="input-container">
+                        <label for="last-name">Last name:</label>
+                        <input type="text" class="input" name="lastname" value="Doe">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email adress:</label>
+                        <input type="text" class="input" name="email" value="example@seamail.com">
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message:</label>
+                        <textarea class="input" name="message"></textarea>
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+    
+    
+    
+        </div>
+    
+    </section>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        
+        sideNav.style.right = "-250px";
+        
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px"
+                menu.src = "images/menu.png";
+            }
+        }
+        
+        const message =
+          "Thank you for submitting your message to The Kingdom Of Colchis.";
+        
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert(message);
+          });
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Royal Assets</title>
+        <link rel="stylesheet" href="css/royal-assets.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <section class="top-page-royala">
+        <header class="header">
+            <img src="images/Logo_Colchis.png" alt="logo">
+        </header>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="royal-family.html">ROYAL FAMILY</a></li>
+        <li><a href="royal-assets.html">ROYAL ASSETS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+
+    </ul>
+    </nav>
+</div>
+
+<div id="menuBtn">
+    <img src="images/menu.png" alt="menu_icon" id="menu">
+</div>
+
+<h1>The Kingdom's Royal Assets</h1>
+<table class="content-table">
+    <thead>
+        <tr>
+            <th>ASSET NAME</th>
+            <th>NUMBER</th>
+            <th>WORTH</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Gards</td>
+            <td>80 000</td>
+            <td>1 500 000 lari</td>
+        </tr>
+        <tr class="active-row">
+            <td>Temples</td>
+            <td>14</td>
+            <td>12 000 000 lari</td>
+        </tr>
+        <tr>
+            <td>Ships</td>
+            <td>1 200</td>
+            <td>8 000 000 lari</td>
+        </tr>
+        <tr class="active-row">
+            <td>Sandals</td>
+            <td>7 000 000</td>
+            <td>150 000 lari</td>
+        </tr>
+        <tr>
+            <td>Wine Oz</td>
+            <td>2 200 000</td>
+            <td>1 500 000 lari</td>
+        </tr>
+        <tr class="active-row">
+            <td>Temple</td>
+            <td>14</td>
+            <td>12 000 000 lari</td>
+        </tr>
+        <tr>
+            <td>Gards</td>
+            <td>80 000</td>
+            <td>1 500 000 lari</td>
+        </tr>
+        <tr class="active-row">
+            <td>Temple</td>
+            <td>14</td>
+            <td>12 000 000 lari</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    
+    sideNav.style.right = "-250px";
+    
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "images/close.png";
+        }
+        else{
+            sideNav.style.right = "-250px"
+            menu.src = "images/menu.png";
+        }
+    }
+    
+    </script>
+
+
+</body>
+</html>

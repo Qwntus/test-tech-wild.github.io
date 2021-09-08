@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Royal Family</title>
+        <link rel="stylesheet" href="css/royal-family.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    
+    <section class="top-page-royalf">
+        <header class="header">
+            <img src="images/Logo_Colchis.png" alt="logo">
+        </header>
+    </section>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="royal-family.html">ROYAL FAMILY</a></li>
+        <li><a href="royal-assets.html">ROYAL ASSETS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+
+    </ul>
+    </nav>
+</div>
+
+<div id="menuBtn">
+    <img src="images/menu.png" alt="menu_icon" id="menu">
+</div>
+
+<section id="heroes">
+    <h2>Our Argo Heroes</h2>
+    <div class="flex-container">
+      <div>
+        <img src="images/aeedes.jpeg" alt="Aeetes" />
+        <h4>Aeetes</h4>
+        <p>King of Colchis, father of Medeas <br> and Stepfather of Jason.</p>
+      </div>
+      <div>
+        <img src="images/madeas.jpeg" alt="Madeas"  />
+        <h4>Madeas</h4>
+        <p>Jason's Girlfriend.</p>
+      </div>
+      <div>
+        <img src="images/queen idyia.jpeg" alt="Idyia" />
+        <h4>Queen Idyia</h4>
+        <p>Wife of Aeetes, mother of Medeas <br> and Stepmother of Jason.</p>
+      </div>
+    </div>
+  </section>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px"
+        menu.src = "images/menu.png";
+    }
+}
+</script>
+
+    
+</body>
+</html>
